@@ -11,7 +11,7 @@
 ## 📌 Project Overview
 This repository contains the completed tasks for **Assignment #5**, focusing on fundamental JavaScript concepts, Document Object Model (DOM) manipulation, event handling, and basic interactive web interfaces.
 
-The application is deployed and available via GitHub Pages: 
+The application is deployed and available via GitHub Pages: https://alihzzz.github.io/WEB1_Assignment5/
 
 ---
 

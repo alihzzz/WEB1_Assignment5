@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 - Part 1: JavaScript Basics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #34495e;
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        code {
+            background: #eef2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #e74c3c;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Assignment 5</div>
+        <ul>
+            <li><a href="index.html" class="active">Part 1</a></li>
+            <li><a href="part2.html">Part 2</a></li>
+            <li><a href="part3.html">Part 3</a></li>
+            <li><a href="part4.html">Part 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Part 1: Introduction to JavaScript</h1>
+
+        <div class="card">
+            <h2>Task 0: First Script</h2>
+            <p>Код вывел всплывающее окно <code>alert("Hello, JavaScript World!")</code> и записал имя и группу в консоль браузера.</p>
+        </div>
+
+        <div class="card">
+            <h2>Task 1: Variables & Operators</h2>
+            <p>Объявлены переменные разных типов, выполнены арифметические операции и конкатенация строк.</p>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

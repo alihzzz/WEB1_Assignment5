@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 - Part 2: DOM Manipulation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #34495e;
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 9px 16px;
+            font-size: 0.95rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s ease-in-out;
+            margin-right: 8px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        button.btn-danger {
+            background-color: #e74c3c;
+        }
+
+        button.btn-danger:hover {
+            background-color: #c0392b;
+        }
+
+        #styleBox {
+            background-color: #e2e8f0;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        #styleBox p {
+            font-size: 16px;
+            transition: font-size 0.3s ease;
+        }
+
+        ul.custom-list {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        ul.custom-list li {
+            padding: 6px 0;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Assignment 5</div>
+        <ul>
+            <li><a href="index.html">Part 1</a></li>
+            <li><a href="part2.html" class="active">Part 2</a></li>
+            <li><a href="part3.html">Part 3</a></li>
+            <li><a href="part4.html">Part 4</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Part 2: DOM Manipulation</h1>
+
+        <div class="card">
+            <h2>Task 2: Changing Content</h2>
+            <p id="contentParagraph">Hello, World!</p>
+            <button id="changeTextBtn">Изменить текст</button>
+        </div>
+
+        <div class="card">
+            <h2>Task 3: Changing Styles</h2>
+            <div id="styleBox">
+                <p id="boxText">Text</p>
+            </div>
+            <button id="changeBgBtn">Изменить цвет фона</button>
+            <button id="changeFontSizeBtn">Изменить размер шрифта</button>
+        </div>
+
+        <div class="card">
+            <h2>Task 4: Creating & Removing Elements</h2>
+            <button id="addItemBtn">Add Item</button>
+            <button id="removeItemBtn" class="btn-danger">Remove Item</button>
+
+            <ul id="itemList" class="custom-list">
+                <li>List 1</li>
+                <li>List 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
